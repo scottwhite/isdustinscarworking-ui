@@ -11,4 +11,4 @@ ADD package.json /opt/isdustinscarworking/
 ADD yarn.lock /opt/isdustinscarworking/
 
 RUN yarn install
-# VOLUME /opt/isdustinscarworking
+VOLUME /opt/isdustinscarworking

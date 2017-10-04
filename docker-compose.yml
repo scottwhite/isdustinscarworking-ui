@@ -5,7 +5,8 @@ services:
     build:
       context: ./
     volumes:
-      - .:/opt/isdustinscarworking
+      - .:/app/
     ports:
       - "3000:3000" 
-    command: ["yarn", "${NPM_TASK:-start}"]
+    working_dir: /app/
+    command: ["/bin/ash", "-c", "rm -rf /app/node_modules && cp -R /opt/isdustinscarworking/node_modules /app/node_modules && yarn ${NPM_TASK:-start}"]
