@@ -8,9 +8,7 @@ Oh yea and it has a service worker for what?!  Get some, will update that soonis
 
 
 Site is at  
-http://isdustinscarworking.com.s3-website-us-east-1.amazonaws.com/
-
-Going to cloudfront soon at it's proper place
+https://isdustinscarworking.com
 
 
 ### setup
