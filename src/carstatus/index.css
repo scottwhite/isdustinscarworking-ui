@@ -1,6 +1,47 @@
 #car{
   height: 400px;
 }
-#denied{
-  display: none;
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#denied {
+  opacity:0;  /* make things invisible upon start */
+  animation:fadeIn ease-in 1;
+  animation-delay: 1s;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning{
+  animation:infinite-spinning 2.5s infinite; 
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  transform-origin: center;
+}
+
+@keyframes slideoff {
+  from {
+    left: 0px;
+    opacity: 1;
+  }
+
+  to {
+    left: -1000px;
+    opacity: 0;
+  }
+}
+.question{
+  position: relative;
+  animation: slideoff 10s linear;
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
 }

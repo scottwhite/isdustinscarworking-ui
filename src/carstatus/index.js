@@ -13,10 +13,15 @@ class Main extends Component {
   }
   render() {
     let {error, status} = this.props;
+    console.log(status);
+    let qclass = '';
+    if(status){
+      qclass = 'question';
+    }
     return (
       <div>
       <Car working={status}/>
-      <p>Is Dustin's car working?</p>
+      <p className={qclass}>Is Dustin's car working?</p>
       </div>
     );
   }

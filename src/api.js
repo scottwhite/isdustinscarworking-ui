@@ -141,16 +141,21 @@ function Api(){
     }
     return params.join('&');
   }
+  function car_status(){
+    //temp
+    return new Promise(function(resolve, reject){
+      resolve(Math.floor(Math.random() * 10) > 5);
+    })
+    
 
-  function tweets(search){
-    let url = config.trump_api;
-    return send_request(url).then(res => res).catch(err => { throw(err) })
+    // let url = config.status_api;
+    // return send_request(url).then(res => res).catch(err => { throw(err) })
   }
 
 
   this.running = running;
   this.kill = _kill;
-  this.tweets = tweets;
+  this.car_status = car_status;
   return this;
 }
 
