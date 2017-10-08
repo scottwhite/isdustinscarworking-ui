@@ -22,7 +22,7 @@
 }
 
 .spinning{
-  animation:infinite-spinning 2.5s infinite; 
+  animation:infinite-spinning 1.25s infinite; 
   animation-timing-function: linear;
   animation-delay: 2s;
   transform-origin: center;
