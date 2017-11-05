@@ -26,6 +26,7 @@
   animation-timing-function: linear;
   animation-delay: 2s;
   transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes slideoff {
